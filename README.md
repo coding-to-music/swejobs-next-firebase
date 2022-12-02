@@ -9,6 +9,9 @@ https://swejobs-next-firebase.vercel.app
 From / By https://github.com/kevinshen56714/SWEJobs.fyi
 
 https://swejobs.fyi/
+
+https://twitter.com/SWEJobsfyi
+
 ## Environment variables:
 
 ```java
