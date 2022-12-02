@@ -1,3 +1,47 @@
+# swejobs-next-firebase
+
+# 🚀 Software Engineer Jobs and Trends Tracker 🚀
+
+https://github.com/coding-to-music/swejobs-next-firebase
+
+https://swejobs-next-firebase.vercel.app
+
+From / By https://github.com/kevinshen56714/SWEJobs.fyi
+
+https://swejobs.fyi/
+## Environment variables:
+
+```java
+    if (process.env.NODE_ENV === 'production') {
+  if (process.env.NODE_ENV === 'development') {
+
+  if (secret !== process.env.NEXT_PUBLIC_REVALIDATE_TOKEN) {
+
+  serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY as string)
+
+const firebaseConfig = {
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
+}
+```
+
+## GitHub
+
+```java
+git init
+git add .
+git remote remove origin
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:coding-to-music/swejobs-next-firebase.git
+git push -u origin main
+```
+
 <p align="center">
   <a href="https://swejobs.fyi/"><img src="https://github.com/kevinshen56714/SWEJobs.fyi/raw/main/public/main-schematic.png" alt="SWEJobs.fyi" width="450rem"></a>
 </p>
