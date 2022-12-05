@@ -162,5 +162,66 @@ Checking /mnt/volume_nyc1_01/swejobs-next-firebase/package.json
  typescript                      4.8.4  →     4.9.3
 
 Run ncu -u to upgrade package.json
+```
 
+## Error creating a build
+
+```
+npm run build
+```
+
+Output
+
+```
+> swejobs-next-firebase@0.1.0 build
+> next build
+
+info  - Loaded env from /mnt/volume_nyc1_01/swejobs-next-firebase/.env
+info  - Linting and checking validity of types
+info  - Creating an optimized production build
+info  - Compiled successfully
+info  - Collecting page data .SyntaxError: Unexpected token u in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at /mnt/volume_nyc1_01/swejobs-next-firebase/.next/server/chunks/186.js:961:27
+
+> Build error occurred
+Error: Failed to collect page data for /about/about-data
+    at /mnt/volume_nyc1_01/swejobs-next-firebase/node_modules/next/dist/build/utils.js:959:15
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  type: 'Error'
+}
+info  - Collecting page data .
+```
+
+## Error when Vercel tries to do a build
+
+```
+info  - Linting and checking validity of types...
+info  - Creating an optimized production build...
+info  - Compiled successfully
+info  - Collecting page data...
+SyntaxError: Unexpected token u in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at /vercel/path0/.next/server/chunks/186.js:961:27
+> Build error occurred
+Error: Failed to collect page data for /about/about-data
+    at /vercel/path0/node_modules/next/dist/build/utils.js:959:15 {
+  type: 'Error'
+}
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+Error: Command "yarn run build" exited with 1
+```
+
+## Versions
+
+```
+node --version
+v16.14.2
+
+npm --version
+9.1.1
+
+vercel --version
+Vercel CLI 28.5.6
 ```

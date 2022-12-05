@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "export NODE_ENV='development' && next dev",
+    "devprod": "export NODE_ENV='production' && next dev",
+    "devtwo": "next dev",
     "build": "next build",
     "start": "export NODE_ENV='production' && next start",
     "deploy": "git add . && git commit -m Build && git push",
