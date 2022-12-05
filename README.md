@@ -15,12 +15,12 @@ https://twitter.com/SWEJobsfyi
 ## Environment variables:
 
 ```java
-    if (process.env.NODE_ENV === 'production') {
-  if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'development') {
 
-  if (secret !== process.env.NEXT_PUBLIC_REVALIDATE_TOKEN) {
+if (secret !== process.env.NEXT_PUBLIC_REVALIDATE_TOKEN) {
 
-  serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY as string)
+serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY as string)
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -76,15 +76,19 @@ git push -u origin main
 - [Interactive data visualization](#interactive-data-visualization)
 
 ### SWE job boards
+
 ![image](https://user-images.githubusercontent.com/11501902/201210657-28604b3c-1951-45d6-97be-7503cb42c469.png)
 
 ### Intuitive filtering tool
+
 ![image](https://user-images.githubusercontent.com/11501902/201210826-75ec61dd-92d6-4e80-86b8-cdf89e910aff.png)
 
 ### Detailed trends and stats
+
 ![image](https://user-images.githubusercontent.com/11501902/201181658-f6d2f00c-fc9a-4f98-b295-b58943ced19c.png)
 
 ### Interactive data visualization
+
 ![image](https://user-images.githubusercontent.com/11501902/201181485-892a67bb-c5cb-45bb-bce5-02f143ea91e5.png)
 
 ## Contributing
