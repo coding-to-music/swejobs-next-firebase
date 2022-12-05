@@ -115,3 +115,51 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+## See what packages need to be updated
+
+```
+npm outdated
+```
+
+Output
+
+```
+Package                      Current   Wanted    Latest  Location                                  Depended by
+@types/node                   18.8.4   18.8.4  18.11.10  node_modules/@types/node                  swejobs-next-firebase
+@types/react                 18.0.21  18.0.21   18.0.26  node_modules/@types/react                 swejobs-next-firebase
+eslint                        8.25.0   8.25.0    8.29.0  node_modules/eslint                       swejobs-next-firebase
+prettier-plugin-tailwindcss   0.1.13   0.1.13     0.2.0  node_modules/prettier-plugin-tailwindcss  swejobs-next-firebase
+typescript                     4.8.4    4.8.4     4.9.3  node_modules/typescript                   swejobs-next-firebase
+```
+
+## Check for updates using ncu
+
+```
+ncu
+```
+
+```
+Checking /mnt/volume_nyc1_01/swejobs-next-firebase/package.json
+[====================] 23/23 100%
+
+ @headlessui/react              ^1.7.3  →    ^1.7.4
+ @heroicons/react              ^2.0.12  →   ^2.0.13
+ @types/node                    18.8.4  →  18.11.10
+ @types/react                  18.0.21  →   18.0.26
+ autoprefixer                 ^10.4.12  →  ^10.4.13
+ eslint                         8.25.0  →    8.29.0
+ eslint-config-next            ^13.0.0  →   ^13.0.6
+ firebase                      ^9.12.0  →   ^9.14.0
+ firebase-admin                ^11.2.0  →   ^11.3.0
+ heroicons                     ^2.0.12  →   ^2.0.13
+ next                          ^13.0.0  →   ^13.0.6
+ postcss                       ^8.4.18  →   ^8.4.19
+ prettier                       ^2.7.1  →    ^2.8.0
+ prettier-plugin-tailwindcss   ^0.1.13  →    ^0.2.0
+ sass                          ^1.55.0  →   ^1.56.1
+ tailwindcss                    ^3.1.8  →    ^3.2.4
+ typescript                      4.8.4  →     4.9.3
+
+Run ncu -u to upgrade package.json
+```
