@@ -162,4 +162,5 @@ Checking /mnt/volume_nyc1_01/swejobs-next-firebase/package.json
  typescript                      4.8.4  →     4.9.3
 
 Run ncu -u to upgrade package.json
+
 ```
