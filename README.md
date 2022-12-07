@@ -168,6 +168,8 @@ Run ncu -u to upgrade package.json
 
 https://github.com/vercel/vercel/discussions/9006
 
+https://github.com/vercel/next.js/discussions/43833
+
 ### Collecting page data .SyntaxError: Unexpected token u in JSON at position 0
 
 Hello, my repo is here: https://github.com/coding-to-music/swejobs-next-firebase
