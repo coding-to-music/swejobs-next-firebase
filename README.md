@@ -164,6 +164,26 @@ Checking /mnt/volume_nyc1_01/swejobs-next-firebase/package.json
 Run ncu -u to upgrade package.json
 ```
 
+## Asking for help
+
+https://github.com/vercel/vercel/discussions/9006
+
+### Collecting page data .SyntaxError: Unexpected token u in JSON at position 0
+
+Hello, my repo is here: https://github.com/coding-to-music/swejobs-next-firebase
+
+I am attempting to build a project I found on GitHub
+
+From / By https://github.com/kevinshen56714/SWEJobs.fyi
+
+https://swejobs.fyi/ (pretty good site)
+
+I am trying to do a build and I get an error trying to collect page data - so not sure if it is something in my setup or if the people who wrote the original repo ran into similar issues.
+
+I am unable to run a build locally and also Vercel has the error too.
+
+I posted the issue originally here: https://github.com/vercel/vercel/discussions/9006
+
 ## Error creating a build
 
 ```
