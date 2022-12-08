@@ -8,16 +8,35 @@ let serviceAccount: string | ServiceAccount
 let app: App
 let db: FirebaseFirestore.Firestore
 
-if (process.env.NODE_ENV === 'production') {
-  serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY as string)
-  app =
-    getApps().length === 0
-      ? initializeApp({
-          credential: cert(serviceAccount),
-        })
-      : getApp()
-  db = getFirestore(app)
-}
+console.log(`process.env.NODE_ENV`, process.env.NODE_ENV)
+console.log(`process.env.FIREBASE_SERVICE_ACCOUNT_KEY`, process.env.FIREBASE_SERVICE_ACCOUNT_KEY)
+console.log(
+  `process.env.NEXT_PUBLIC_FIREBASE_SERVICE_ACCOUNT_KEY`,
+  process.env.NEXT_PUBLIC_FIREBASE_SERVICE_ACCOUNT_KEY
+)
+
+// if (process.env.NODE_ENV === 'production') {
+//   serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY as string)
+//   app =
+//     getApps().length === 0
+//       ? initializeApp({
+//           credential: cert(serviceAccount),
+//         })
+//       : getApp()
+//   db = getFirestore(app)
+// }
+
+// serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY as string)
+
+serviceAccount = process.env.FIREBASE_SERVICE_ACCOUNT_KEY
+
+app =
+  getApps().length === 0
+    ? initializeApp({
+        credential: cert(serviceAccount),
+      })
+    : getApp()
+db = getFirestore(app)
 
 export const checkTodayData = async (city: string | string[], todayStr: string) => {
   const snapshot = await db
