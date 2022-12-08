@@ -15,22 +15,17 @@ https://twitter.com/SWEJobsfyi
 ## Environment variables:
 
 ```java
-if (process.env.NODE_ENV === 'production') {
-if (process.env.NODE_ENV === 'development') {
+NEXT_PUBLIC_FIREBASE_SERVICE_ACCOUNT_KEY =
+  'firebase-adminsdk-XXXXXXXXX@swejobs-next-firebase.iam.gserviceaccount.com'
+NEXT_PUBLIC_REVALIDATE_TOKEN = 'VVVVVVVVVVVVVVVVV'
 
-if (secret !== process.env.NEXT_PUBLIC_REVALIDATE_TOKEN) {
-
-serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY as string)
-
-const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
-  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
-}
+NEXT_PUBLIC_FIREBASE_API_KEY = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN = 'swejobs-next-firebase.firebaseapp.com'
+NEXT_PUBLIC_FIREBASE_PROJECT_ID = 'swejobs-next-firebase'
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET = 'swejobs-next-firebase.appspot.com'
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID = '333333333333333'
+NEXT_PUBLIC_FIREBASE_APP_ID = 'YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY'
+NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID = 'G-ZZZZZZZZZZZZZZZZZZ'
 ```
 
 ## GitHub
