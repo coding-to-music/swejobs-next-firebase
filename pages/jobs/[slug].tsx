@@ -135,7 +135,7 @@ export default function JobList(props: { jobs: Job[]; lastUpdated: number }) {
 
   const stats = useMemo(() => assembleStats(jobs), [jobs])
 
-  console.log('job post rerendered')
+  console.log('JobList: job post rerendered')
 
   const handleFilterChange = (prop: keyof FilterData) => (value: string) => {
     let newFilterData: FilterData

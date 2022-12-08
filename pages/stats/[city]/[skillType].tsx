@@ -32,7 +32,7 @@ export default function Stats(props: { stats: { [skill: string]: number } }) {
     () => getTopSortedSkills(stats, numSkillsInChart),
     [stats, numSkillsInChart]
   )
-  console.log('Stats rerendered')
+  console.log('skillType: Stats rerendered')
 
   return (
     <>
